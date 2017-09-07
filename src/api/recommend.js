@@ -50,5 +50,9 @@ export function getSongList(disstid) {
     needNewCode: 0
   })
 
-  return jsonp(url, data, options)
+  return jsonp(url, data, {
+    param: 'jsonpCallback',
+    name: 'playlistinfoCallback'
+
+  })
 }

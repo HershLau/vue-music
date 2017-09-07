@@ -36,7 +36,7 @@
         }
         getSongList(this.disc.dissid).then((res) => {
           if (res.code === ERR_OK) {
-            console.log(res)
+            console.log(res.cdlist[0])
           }
         })
       }
